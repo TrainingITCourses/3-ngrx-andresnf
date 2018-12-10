@@ -14,7 +14,7 @@ import { ConditionStatus, ConditionAgency, ConditionType } from '../reducers/con
   styleUrls: ['./search-filter.component.css']
 })
 export class SearchFilterComponent implements OnInit {
-  @Output() public search = new EventEmitter<string>();
+  @Output() public search = new EventEmitter<any>();
   public statuses: Status[];
   public agencies: Agency[];
   public types: any[];
